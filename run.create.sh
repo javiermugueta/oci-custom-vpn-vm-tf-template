@@ -95,6 +95,7 @@ then
 else
     if [ $myvar == "Y" ]
     then
+        terraform init
         terraform apply -auto-approve 
     fi
 fi
