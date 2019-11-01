@@ -27,9 +27,18 @@ ssh to vm with the private key you provided in vars.oci.sh
 ### 6.sudo
 sudo -i
 ### 7.final steps in conf
-Edit myvpn.comf and myvpn.secrets with the public IP created
+Edit /etc/ipsec.d/myvpn.cof and /etc/ipsec.d/myvpn.secrets with the public IP created
 ### 8.start to see if tunnel starts up
 Make a collaboration meeting with your peer and see what happens. Good luck!!!!
+Help commands
+```
+systemctl restart ipsec.service
+ipsec auto --add myvpn
+ipsec auto --up myvpn
+ipsec status
+ipsec barf
+ipsec --help
+```
 
 
 
