@@ -42,7 +42,7 @@ Edit /etc/ipsec.d/myvpn.cof and /etc/ipsec.d/myvpn.secrets with the public IP cr
 ### 8.start to see if tunnel starts up
 Make a collaboration meeting with your peer and see what happens.<br>
 Good luck!!!!<br>
-This command may help:<br>
+These commands may help:<br>
 ```
 systemctl restart ipsec.service
 ipsec auto --add myvpn
