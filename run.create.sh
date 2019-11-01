@@ -97,9 +97,9 @@ else
     then
         terraform apply -auto-approve 
     fi
-    rm myvpn.conf
-    rm myvpn.secrets
-    rm tmp.cloudinit.encoded
-    rm tmp.cloudinit.script 
 fi
+rm myvpn.conf
+rm myvpn.secrets
+rm tmp.cloudinit.encoded
+rm tmp.cloudinit.script 
 #
