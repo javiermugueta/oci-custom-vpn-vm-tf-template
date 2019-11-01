@@ -1,0 +1,28 @@
+# vpn conf
+#
+conn myvpn
+  type=tunnel
+  authby=secret
+  pfs=yes
+  keyexchange=ike
+  ikev2=no
+  #
+  ike=aes_256-sha1;modp1024
+  ikelifetime=86400
+  #
+  phase2=esp
+  esp=aes-sha1;modp1536
+  keylife=3600
+  #
+  rightnexthop=%defaultroute
+  initial-contact=yes
+  dpddelay=30
+  dpdtimeout=60
+  dpdaction=restart
+  #
+  # put other vpn stuff here
+  #
+  # left and right stuff
+  # please note that theese values must have different
+  # behaviour depending on peer
+  # don't assume anything and double check everything!!!
