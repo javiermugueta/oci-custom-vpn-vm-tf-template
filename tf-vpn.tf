@@ -19,7 +19,7 @@ resource "oci_core_internet_gateway" "igw" {
 }
 resource "oci_core_subnet" "vpnsubnet" {
   availability_domain = "${data.oci_identity_availability_domain.ad.name}"
-  cidr_block          = "${var.vpnvcncidr}"
+  cidr_block          = "${var.myvpnsubnet}"
   display_name        = "${var.role}vpnsubnet"
   dns_label           = "${var.role}vpnsubnet"
   compartment_id      = "${var.compartmentocid}"

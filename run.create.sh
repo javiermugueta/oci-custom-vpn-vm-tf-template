@@ -48,8 +48,8 @@ echo "  rightsubnet="${your_vpn_subnet} >> myvpn.conf
 #
 # building myvpn.secrets file
 #
-echo "${myvpnprivateip} ${yourvpnpublicip} : PSK \"${psk}\"" > myvpn.secrets
-echo "${myvpnpublicip} ${yourvpnpublicip} : PSK \"${psk}\"" >> myvpn.secrets
+echo "${my_vpn_private_ip} ${your_vpn_public_ip} : PSK \"${psk}\"" > myvpn.secrets
+echo "${my_vpn_public_ip} ${your_vpn_public_ip} : PSK \"${psk}\"" >> myvpn.secrets
 #
 # creating cloud-init script
 #

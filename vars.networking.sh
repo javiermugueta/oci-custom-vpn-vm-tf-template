@@ -9,7 +9,7 @@ my_vpn_private_ip="<the private ip I want the vpn vm to assign to, such as 10.25
 my_vpn_public_ip="<assigned on creation, see tf output, change it later>"
 my_vpn_subnet="<the subnet encriptions domain in my side, such 10.250.128.0/24>"
 # right side (you/your)
-your_vpn_public_ip="<put here the public IP assigned by the rigth peer>"
+your_vpn_public_ip="<put here the public IP of the rigth peer>"
 your_vpn_private_ip="<put here the private IP of the rigth peer>"
 your_vpn_subnet="<the subnet encriptions domain in right side>"
 #
